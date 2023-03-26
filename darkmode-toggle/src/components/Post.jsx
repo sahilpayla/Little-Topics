@@ -1,20 +1,21 @@
-import React, { useContext } from 'react'
-import '../App.css'
-import { ThemeContext } from '../Context/ThemeContext.js'
+import React, { useContext } from "react";
+import '../App.css';
+import { ThemeContext } from "../Context/ThemeContext";
 
-const Post = () => {
-  const { theme, handleOnClick } = useContext(ThemeContext)
+
+const Posts = () => {
+  const { theme, handleOnClick } = useContext(ThemeContext);
   return (
-    <>
-      <h4 className='heading'>My Post With {theme}</h4>
+    <div>
+      <h4>My Post With {theme}</h4>
       <button
-        className="btn"
+        className={`${theme === "dark" ? "btn-light" : "btn-dark"}`}
         onClick={handleOnClick}
       >
-        {theme === "dark" ? "light" : "dark"}
+        {theme === "Dark" ? "Light" : "Dark"}
       </button>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Post
+export default Posts;
