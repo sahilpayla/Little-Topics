@@ -13,7 +13,7 @@ body{
   background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px 15px rgb(245, 245, 245) ,
               inset -2px -2px 15px rgb(173, 173, 173);
-  transition: 1s ease;
+  transition: 0.3 ease;
 }
 .btn-dark{
   border: none;
@@ -27,6 +27,7 @@ body{
   transition: 1s ease;
 }
 .btn-light:hover, .btn-dark:hover{
+  transition: 1s ease;
   cursor: pointer;
   box-shadow: 
                inset 2px 2px 15px rgb(107, 107, 107) ,
