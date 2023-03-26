@@ -1,0 +1,23 @@
+body{
+  background-color: rgb(212, 212, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+.btn{
+  border: none;
+  padding: 15px 30px;
+  border-radius: 40px;
+  margin-top: 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 15px rgb(245, 245, 245) ,
+              inset -2px -2px 15px rgb(173, 173, 173);
+  transition: 1s ease;
+}
+.btn:hover{
+  cursor: pointer;
+  box-shadow: 
+               inset 2px 2px 15px rgb(107, 107, 107) ,
+                -2px -2px 15px rgb(255, 255, 255);
+}
