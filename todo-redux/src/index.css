@@ -1,8 +1,9 @@
 * {
     margin: 0;
-    text-transform: capitalize;
     padding: 0;
-    box-sizing: border-box;
     text-align: center;
+    border-radius: 10px; 
     text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
 }

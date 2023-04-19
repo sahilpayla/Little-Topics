@@ -1,5 +1,10 @@
 .app {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 900px;
     margin: auto;
+    padding: 10px;
+}
+.addtodo{
+    padding: 15px;
+    box-shadow: 1px 1px 5px grey;
 }
