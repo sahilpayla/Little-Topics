@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
+    border-radius: 10px;
+    font-family:  'Arial,consolas , sans-serif';
 }
 
 .background {
@@ -16,15 +18,19 @@
 }
 
 .main__container {
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(194, 194, 194, 0.253);
     width: 20%;
+    border: 1px solid transparent;
+    padding: 20px;
 }
 
 .display__section {
-    background-color: white;
+    /* background-color: white; */
     width: 100%;
+    color: white;
     padding: 40px;
-    font-size: 40px;
+    font-weight: bold;
+    font-size: 100px;
     text-align: center;
 }
 
@@ -41,21 +47,22 @@
     width: 100%;
     cursor: pointer;
     /* border: 1px solid white; */
-    padding: 20px;
-    background-color: grey;
-    font-size: 40px;
+    background-color: rgb(255, 255, 255);
+    /* color: whitesmoke; */
+    line-height: 40px;
     transition: 0.2s ease;
-    /* margin-right: 10px; */
+    font-size: 40px;
+    padding:1px 2px;
 }
 
 .left__btn:hover,
 .right__btn:hover {
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(0, 0, 0);
     /* font-size: 50px; */
     color: white;
 }
 .left__btn{
-    margin-right: 1px;
+    margin-right: 5px;
 }
 
 .reset {
@@ -63,8 +70,9 @@
     background-color: red;
     color: aliceblue;
     margin: 20px auto;
-    padding: 10px;
-    font-size: 20px;
+    padding: 10px 50px;
+    font-size: 12px;
+    font-weight: bold;
     cursor: pointer;
     text-align: center;
 }

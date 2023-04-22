@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './App.css';
 
+
 const App = () => {
   const [counter, setCounter] = useState(0);
 
@@ -12,7 +13,7 @@ const App = () => {
   const handleClick1 = () => {
     if (counter === 0) {
       setCounter(0);
-      alert('Ohh bas Kar baiii')
+      alert('Zero is last value after decrement')
     }
     else {
       setCounter(counter - 1)
@@ -39,7 +40,7 @@ const App = () => {
           </div>
           <div className="btn__section">
             <button onClick={handleClick1} className="left__btn">-</button>
-            <div onMouseOver={handleClick2} onMouseLeave={handleClick2} className="right__btn">+</div>
+            <button onClick={handleClick2} onMouseOver={handleClick2} onMouseLeave={handleClick2} className="right__btn">+</button>
           </div>
         </div>
       </div>
