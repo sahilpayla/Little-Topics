@@ -2,8 +2,8 @@ import React from 'react'
 import phone1 from '../../Images/phone4.png'
 import phone2 from '../../Images/phone3.png'
 import style from './Flexible_approval.module.css';
-import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Flexible_approval = () => {
     return (
@@ -48,7 +48,7 @@ const Flexible_approval = () => {
                             </span>
                         </p>
                     </div>
-                    
+
                     <div className={style.demo}>Book a demo
                         <i class="fa-solid fa-arrow-right"
                             style={{ padding: "20px" }}

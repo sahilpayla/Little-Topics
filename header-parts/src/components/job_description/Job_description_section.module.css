@@ -2,6 +2,7 @@
     display: flex;
     margin: auto;
     max-width: 70%;
+    flex-wrap: wrap;
     /* background-color: red; */
 }
 
@@ -12,8 +13,11 @@
 }
 
 .left_container {
-    display: flex;
     /* width: 20%; */
+    justify-content: center;
+    /* background-color: red; */
+    display: flex;
+    /* flex: wrap; */
     position: relative;
     justify-content: space-evenly;
 }
@@ -21,13 +25,14 @@
 .left_container .phone_down {
     margin-top: 100px;
 }
+
 .left_container .phone_up {
     margin-bottom: 100px;
 }
 
 .heading {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2rem;
     padding: 10px 0;
 }
 
@@ -51,4 +56,18 @@
 .demo {
     font-weight: 600;
     color: #2186F2;
+}
+
+
+/* media queries */
+
+@media (max-width: 1093px) {
+
+    .left_container,
+    .right_container {
+        width: 100%;
+        padding: 10px 0;
+        justify-content: space-evenly;
+    }
+
 }

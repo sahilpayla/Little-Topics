@@ -26,7 +26,7 @@ const Hero_section = () => {
 
 
                 <div className={style.curve}></div>
-                <Curve />
+                {/* <Curve /> */}
 
                 {/* laptop image */}
                 {/* <div className={style.laptop}>

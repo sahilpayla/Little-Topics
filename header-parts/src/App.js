@@ -13,7 +13,7 @@ import Footer from './components/footer_section/Footer';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <Hero_section />
       <Job_description_section />
       <CandidatesScore />

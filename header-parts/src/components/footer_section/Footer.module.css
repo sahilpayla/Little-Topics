@@ -11,54 +11,102 @@
     padding-top: 20px;
     border-top: 1px solid grey;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-.privacy_policy_section{
+
+.privacy_policy_section {
     display: flex;
 }
-.policy{
+
+.policy {
     padding: 0 10px 0 0;
     text-decoration: underline;
 }
 
-.footer_top_section{
+.footer_top_section {
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 40px;
     /* background-color: red; */
     color: white;
     justify-content: space-between;
     align-items: center;
 }
-.logo_section{
+
+.logo_section {
     display: flex;
     align-items: center;
 }
-.navigation{
+
+.navigation {
     display: flex;
+    flex-wrap: wrap;
     padding: 20px 0 40px 0;
 }
-.navigation_items{
+
+.navigation_items {
     padding: 0 10px;
     font-size: 14.41px;
 }
-.footer_email_section{
-display: flex;
-padding: 20px 0;
-justify-content: space-between;
-/* background-color: red; */
-}    
-.footer_email{
+
+.footer_email_section {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.footer_email {
     font-size: 14px;
     padding: 14px 22px;
     border-radius: 28px;
     outline: none;
     border: 1px solid #F4D313;
 }
-.footer_subscribe_button{
+
+.footer_subscribe_button {
     font-size: 14px;
     padding: 14px 22px;
     border-radius: 28px;
     background-color: #F4D313;
-    border:none;
+    border: none;
     color: white;
+}
+
+/* query */
+
+@media (max-width: 940px) {
+    .footer {
+        background: #211F25;
+        margin: auto;
+        padding: 20px 14px;
+        width: 100%;
+    }
+
+    .navigation_items {
+        padding: 0 10px;
+        font-size: 20px;
+        flex-direction: column;
+    }
+
+    .footer_email {
+        font-size: 14px;
+        padding: 2px 12px;
+        border-radius: 28px;
+        outline: none;
+        /* width: max-content; */
+        border: 1px solid #F4D313;
+    }
+
+    .footer_subscribe_button {
+        font-size: 14px;
+        padding: 2px 12px;
+        border-radius: 28px;
+        background-color: #F4D313;
+        border: none;
+        color: white;
+    }
+
+
 }

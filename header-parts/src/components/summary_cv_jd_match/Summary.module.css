@@ -1,6 +1,7 @@
 .main_container {
     display: flex;
     margin: auto;
+    flex-wrap: wrap;
     max-width: 70%;
     /* background-color: red; */
 }
@@ -52,3 +53,17 @@
     font-weight: 600;
     color: #2186F2;
 }
+
+/* media queries */
+
+@media (max-width: 1093px) {
+
+    .left_container,
+    .right_container {
+        width: 100%;
+        padding: 10px 0;
+        justify-content: space-evenly;
+    }
+
+}
+
