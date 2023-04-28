@@ -45,18 +45,23 @@
 .right_container {
     display: flex;
     position: relative;
+    overflow: hidden;
+    padding: 40px 0px;
     /* border: 1px solid grey; */
-    padding: 40px 0;
+    width: 5 0%;
+    padding-left: 40px;
+    /* background-color: red; */
 }
 
 .ipad{
-    position: relative;
     width: 100%;
-    /* left: 0; */
+    position: relative;
+    padding: 40px 0;
+    left: 10%;
 }
 .screen{
-    top: 9%;
-    left: 3%;
+    top: 13%;
+    left: 8%;
     position: absolute;
 }
 .ipad img{

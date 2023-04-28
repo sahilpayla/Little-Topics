@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Workflow.module.css';
 import ipad from '../../Images/ipad.png'
-import screen from '../../Images/laptop.png'
+import screen from '../../Images/dashboard.png'
 
 const Workflow = () => {
     return (

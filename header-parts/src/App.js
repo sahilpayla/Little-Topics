@@ -7,6 +7,7 @@ import Summary from './components/summary_cv_jd_match/Summary';
 import Flexible_approval from './components/flexible_approval/Flexible_approval';
 import CandidatesScore from './components/candidates_score/CandidatesScore';
 import Workflow from './components/workflow/Workflow';
+import CustomerSlider from './components/CustomerSlider/CustomerSlider';
 
 // import laptopImage from './Images/MacBook Pro 16.png'
 // import logoImage from './Images/laptop.png'
@@ -21,6 +22,7 @@ function App() {
       <Summary />
       <Workflow />
       <Flexible_approval />
+      <CustomerSlider />
     </div>
  
     // <div className="container">
