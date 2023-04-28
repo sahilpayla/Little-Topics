@@ -1,19 +1,24 @@
 .main_container {
     display: flex;
     margin: auto;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     /* background-color: red; */
     background: linear-gradient(180deg, rgba(49, 104, 236, 0.19) 0%,
-    rgba(49, 104, 236, 0.06) 100%);
+            rgba(49, 104, 236, 0.06) 100%);
 }
 
-.left_container{
+
+.left_container {
     /* background-color: red; */
     width: 50%;
     /* padding: 0 10%; */
-    padding-left:10% ;
+    padding-left: 10%;
     /* border: 1px solid grey; */
 }
+
+
 
 .heading {
     font-weight: 600;
@@ -55,20 +60,23 @@
     /* background-color: red; */
 }
 
-.ipad{
+.ipad {
     width: 100%;
     position: relative;
     padding: 40px 0;
     left: 10%;
 }
-.screen{
+
+.screen {
     top: 13%;
     left: 8%;
     position: absolute;
 }
-.ipad img{
+
+.ipad img {
     width: 100%;
 }
-.screen img{
+
+.screen img {
     width: 100%;
 }

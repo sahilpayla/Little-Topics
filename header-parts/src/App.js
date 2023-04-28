@@ -7,6 +7,7 @@ import Flexible_approval from './components/flexible_approval/Flexible_approval'
 import CandidatesScore from './components/candidates_score/CandidatesScore';
 import Workflow from './components/workflow/Workflow';
 import CustomerSlider from './components/slider_section/CustomerSlider';
+import Footer from './components/footer_section/Footer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Workflow />
       <Flexible_approval />
       <CustomerSlider />
+      <Footer />
     </div>
  
     // <div className="container">

@@ -28,7 +28,9 @@
 .hero_section_button_section {
     display: flex;
     /* width: 80%; */
+    flex-wrap: wrap;
     margin: auto;
+    justify-content: center;
 }
 
 .get_started {
@@ -67,4 +69,30 @@
     left: 0;
     top: 0;
     z-index: 10;
+}
+
+
+
+/* media queries */
+
+@media (max-width: 620px) {
+    
+    .hero_section_content{
+        font-size: 25px;
+    }
+    .hero_section_content2{
+        font-size: 14px;
+        padding:24px 10px;
+        width: 100%;
+        /* letter-spacing: 0.6px; */
+        text-align: justify;
+    }
+    .hero_section_button_section{
+        padding: 40px 0;
+    }
+    .watch_video{
+        margin: 0;
+        margin-top: 20px;
+        /* background-color: red; */
+    }
 }
