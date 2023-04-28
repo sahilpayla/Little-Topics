@@ -35,6 +35,8 @@
     border-radius: 8px;
     padding: 32px 28px;
     width: 32%;
+    /* background-color: red; */
+    position: relative;
 }
 
 .main_box_white {
@@ -48,6 +50,7 @@
 
 .para {
     padding: 40px 0;
+    /* position: relative; */
     font-size: 14px;
 }
 
@@ -66,4 +69,30 @@
     color: #4F4F4F;
     font-size: 14px;
     font-weight: 400;
+}
+
+.slider_left_button {
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    color: white;
+    background-color: #2186F2;
+    padding: 5px 10px;
+    border-radius: 40px;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    left: 8.5%;
+}
+
+.slider_right_button {
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    border: 1px solid #2186F2;
+    /* color: white; */
+    color: #2186F2;
+    padding: 5px 10px;
+    border-radius: 40px;
+    /* transform: translate(-50%, -50%); */
+    right: 8.5%;
 }

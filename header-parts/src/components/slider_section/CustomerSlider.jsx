@@ -15,6 +15,9 @@ const CustomerSlider = () => {
 
                 {/* slider */}
                 <div className={style.slider_container}>
+                    <div className={style.slider_left_button}>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
 
                     <div className={style.main_box}>
                         <div className={style.star_section}>
@@ -89,6 +92,10 @@ const CustomerSlider = () => {
                                 <div className={style.profession}>Developer</div>
                             </div>
                         </div>
+                    </div>
+
+                    <div className={style.slider_right_button}>
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
 
                 </div>
