@@ -2,6 +2,8 @@ import React from 'react'
 import style from './Customer.module.css';
 // import Curve from '../curve/Curve';
 import avatar1 from '../../Images/Testimonial/Avatar Image.png'
+import avatar2 from '../../Images/Testimonial/Avatar Image2.png'
+import avatar3 from '../../Images/Testimonial/Avatar Image3.png'
 
 
 const CustomerSlider = () => {
@@ -55,7 +57,7 @@ const CustomerSlider = () => {
 
                         <div className={style.flex_container}>
                             <div className={style.pic_section}>
-                                <img src={avatar1} alt="avatar1" />
+                                <img src={avatar2} alt="avatar2" />
                             </div>
                             <div>
                                 <div className={style.names}>Rahul Mehra</div>
@@ -80,7 +82,7 @@ const CustomerSlider = () => {
 
                         <div className={style.flex_container}>
                             <div className={style.pic_section}>
-                                <img src={avatar1} alt="avatar1" />
+                                <img src={avatar3} alt="avatar3" />
                             </div>
                             <div>
                                 <div className={style.names}>Satyam Jha</div>
