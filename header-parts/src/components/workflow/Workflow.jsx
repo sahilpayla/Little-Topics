@@ -1,35 +1,22 @@
 import React from 'react'
-import phone1 from '../../Images/phone4.png'
-import phone2 from '../../Images/phone3.png'
-import style from './Flexible_approval.module.css';
-import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import style from './Workflow.module.css';
+import ipad from '../../Images/ipad.png'
+import screen from '../../Images/laptop.png'
 
-const Flexible_approval = () => {
+const Workflow = () => {
     return (
         <>
             <div className={style.main_container}>
 
-
                 {/* left container */}
+
                 <div className={style.left_container}>
-                    <div className={style.phone_down}>
-                        <img src={phone1} alt="" />
-                    </div>
-                    <div className={style.phone_up}>
-                        <img src={phone2} alt="" />
-                    </div>
-                </div>
-
-
-                {/* right container */}
-                <div className={style.right_container}>
                     <div className={style.heading}>
-                        Most flexible approval mechanism
+                        Workflow that connects all
                     </div>
                     <div className={style.subheading}>
                         <p>
-                            Approval flow for JD's to match any company's need.
+                        Brings together companies, recruiters, candidates in the same workflow. Today the company to recruiter flow is inefficient with many manual processes.
                         </p>
                     </div>
                     <div className={style.para}>
@@ -44,15 +31,29 @@ const Flexible_approval = () => {
                             </span>
 
                             <span>
-                                <b>From days to seconds: </b>   Just say "Write me a JD for a Java developer with 3 years of experience" and get a response in seconds. Review, do changes if any and done !
+                            <b>Integrated workflow :</b> Integrated workflow: With our integrated workflow, days lost in emails not seen, calls not picked will be a thing of past.
                             </span>
                         </p>
                     </div>
-                    
+
                     <div className={style.demo}>Book a demo
                         <i class="fa-solid fa-arrow-right"
                             style={{ padding: "20px" }}
                         ></i>
+                    </div>
+                </div>
+
+
+
+
+
+                {/* right container */}
+                <div className={style.right_container}>
+                    <div className={style.ipad}>
+                    </div>
+                    <img src={ipad} alt="" />
+                    <div className={style.screen}>
+                        <img src={screen} alt="" />
                     </div>
                 </div>
             </div>
@@ -60,4 +61,4 @@ const Flexible_approval = () => {
     )
 }
 
-export default Flexible_approval
+export default Workflow

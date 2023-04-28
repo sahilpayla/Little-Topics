@@ -1,35 +1,22 @@
 import React from 'react'
-import phone1 from '../../Images/phone4.png'
-import phone2 from '../../Images/phone3.png'
-import style from './Flexible_approval.module.css';
-import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import style from './Candidates.module.css';
+import ipad from '../../Images/ipad.png'
+import screen from '../../Images/screen.png'
 
-const Flexible_approval = () => {
+const CandidatesScore = () => {
     return (
         <>
             <div className={style.main_container}>
 
-
                 {/* left container */}
+
                 <div className={style.left_container}>
-                    <div className={style.phone_down}>
-                        <img src={phone1} alt="" />
-                    </div>
-                    <div className={style.phone_up}>
-                        <img src={phone2} alt="" />
-                    </div>
-                </div>
-
-
-                {/* right container */}
-                <div className={style.right_container}>
                     <div className={style.heading}>
-                        Most flexible approval mechanism
+                        Candidate score against the JD
                     </div>
                     <div className={style.subheading}>
                         <p>
-                            Approval flow for JD's to match any company's need.
+                            Upload the CV against a JD. Push a button, let the most advanced AI do its magic and give you a number on a score for 1 to 10 for the candidate against the JD in question
                         </p>
                     </div>
                     <div className={style.para}>
@@ -44,15 +31,30 @@ const Flexible_approval = () => {
                             </span>
 
                             <span>
-                                <b>From days to seconds: </b>   Just say "Write me a JD for a Java developer with 3 years of experience" and get a response in seconds. Review, do changes if any and done !
+                                <b>2,500+ job boards:</b> Global, local and specialized free
+                                and premium platforms integrated natively.
                             </span>
                         </p>
                     </div>
-                    
+
                     <div className={style.demo}>Book a demo
                         <i class="fa-solid fa-arrow-right"
                             style={{ padding: "20px" }}
                         ></i>
+                    </div>
+                </div>
+
+
+
+
+
+                {/* right container */}
+                <div className={style.right_container}>
+                    <div className={style.ipad}>
+                    </div>
+                    <img src={ipad} alt="" />
+                    <div className={style.screen}>
+                        <img src={screen} alt="" />
                     </div>
                 </div>
             </div>
@@ -60,4 +62,4 @@ const Flexible_approval = () => {
     )
 }
 
-export default Flexible_approval
+export default CandidatesScore
