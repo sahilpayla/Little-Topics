@@ -19,11 +19,11 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='/about' element={<About />} />
         <Route exact path='/contact' element={<ContactUs />} />
-        <Route exact path='/servi' element={<Service />} />
+        <Route exact path='/service' element={<Service />} />
         <Route exact path='*' element={<PageNotFound />} />
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

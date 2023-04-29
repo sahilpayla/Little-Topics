@@ -7,6 +7,10 @@
   color: inherit;
 }
 
+h1 {
+  padding: 40px 0;
+}
+
 .header,
 .nav-links,
 .logo {
@@ -15,7 +19,7 @@
   margin: auto;
   color: white;
   background-color: rgb(0, 0, 0);
-
+  /* width: 100%; */
   display: flex;
   align-items: center;
   flex-direction: row;
