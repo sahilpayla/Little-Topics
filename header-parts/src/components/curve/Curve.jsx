@@ -9,9 +9,9 @@ function Curve() {
             <div className={style.curve}>
                 <div className={style.white_curve}>
                     <div className={style.container}>
-                        <img src={laptop} alt="" />
+                        <img src={laptop} alt="laptop" />
                         <div className={style.inner_container}>
-                            <img src={screen} alt="" />
+                            <img src={screen} alt="screen" />
                         </div>
                     </div>
                 </div>

@@ -1,11 +1,11 @@
 import React from 'react'
-import Curve from '../components/curve/Curve'
+import Demo from '../components/demo/Demo';
+
 
 const BookADemo = () => {
   return (
     <>
-        {/* <h1>Book A Demo</h1> */}
-        <Curve />
+      <Demo />
     </>
   )
 }
