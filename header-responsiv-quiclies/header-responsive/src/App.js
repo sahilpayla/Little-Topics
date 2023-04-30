@@ -1,31 +1,15 @@
-import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import './App.css';
-import Home from './screens/Home';
-import About from './screens/About';
-import ContactUs from './screens/ContactUs';
-import Service from './screens/Service';
-import { Route, Routes } from 'react-router-dom';
-import PageNotFound from './screens/PageNotFound';
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
 
-
-function App() {
+const App = () => {
   return (
     <>
-      <Header />
-
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route exact path='/about' element={<About />} />
-        <Route exact path='/contact' element={<ContactUs />} />
-        <Route exact path='/service' element={<Service />} />
-        <Route exact path='*' element={<PageNotFound />} />
-      </Routes>
-
-      <Footer />
+        <Routes>
+          <Route exact path='/' element={<Navbar />} />
+        </Routes>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
