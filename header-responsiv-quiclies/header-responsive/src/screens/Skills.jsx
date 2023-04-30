@@ -2,7 +2,7 @@ import React from 'react'
 
 const Skills = () => {
     return (
-        <div>Skills</div>
+        <div style={{textAlign:'center', fontSize:"40px", marginTop:"140px"}}>Skills</div>
     )
 }
 

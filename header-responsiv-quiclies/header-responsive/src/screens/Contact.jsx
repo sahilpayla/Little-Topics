@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div style={{textAlign:'center', fontSize:"40px", marginTop:"140px"}}>Contact</div>
   )
 }
 
