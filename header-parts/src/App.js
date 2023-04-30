@@ -13,7 +13,7 @@ import Footer from './components/footer_section/Footer';
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
       <Hero_section />
       <Job_description_section />
       <CandidatesScore />
@@ -24,14 +24,6 @@ function App() {
       <Footer />
     </div>
  
-    // <div className="container">
-    //   <div className="laptop">
-    //     <img src={laptopImage} alt="Laptop" />
-    //     <div className="logo">
-    //       <img src={logoImage} alt="Logo" />
-    //     </div>
-    //   </div>
-    // </div>
 
   );
 }

@@ -1,13 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
 
-
-function App() {
+const App = () => {
   return (
-    <>
-      <h1>app page</h1>
-    </>
-  );
+    <div>App</div>
+    
+  )
 }
 
-export default App;
+export default App

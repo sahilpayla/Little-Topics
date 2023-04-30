@@ -7,13 +7,15 @@ function TodoList() {
 
     function handleSubmit(event) {
         event.preventDefault();
+
         const newTodo = {
             title: event.target.elements.title.value,
             description: event.target.elements.description.value
         };
         if (editTodo.index === -1) {
             setTodos([...todos, newTodo]);
-        } else {
+        } 
+        else {
             const updatedTodos = [...todos];
             updatedTodos[editTodo.index] = newTodo;
             setTodos(updatedTodos);
