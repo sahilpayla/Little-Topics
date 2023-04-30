@@ -42,4 +42,9 @@
     width: 200px;
     display: block;
   }
+
+  .inner-container {
+    bottom: 4px;
+  }
+  
 }
