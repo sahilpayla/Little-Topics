@@ -2,7 +2,7 @@ import React from 'react'
 import phone1 from '../../Images/phone4.png'
 import phone2 from '../../Images/phone3.png'
 import style from './Job_description_section.module.css';
-
+import { Link } from 'react-router-dom';
 
 const Job_description_section = () => {
     return (
@@ -47,10 +47,13 @@ const Job_description_section = () => {
                             </span>
                         </p>
                     </div>
-                    <div className={style.demo}>Book a demo
-                        <i class="fa-solid fa-arrow-right"
-                            style={{ padding: "20px" }}
-                        ></i></div>
+                    <Link to='/demo'>
+                        <div className={style.demo}>Book a demo
+                            <i class="fa-solid fa-arrow-right"
+                                style={{ padding: "20px" }}
+                            ></i>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </>

@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import Header from './components/header_section/Header';
 import { Routes, Route } from 'react-router-dom'
-import Footer from './components/footer_section/Footer';
 import About from './screens/About';
 import Contact from './screens/Contact';
 import Features from './screens/Features';
@@ -24,8 +23,6 @@ function App() {
         <Route exact path='/demo' element={<BookADemo />} />
       </Routes>
 
-      {/* <Home /> */}
-      <Footer />
     </div>
 
 

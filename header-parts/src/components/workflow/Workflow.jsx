@@ -2,6 +2,7 @@ import React from 'react'
 import style from './Workflow.module.css';
 import ipad from '../../Images/ipad.png'
 import screen from '../../Images/dashboard.png'
+import { Link } from 'react-router-dom';
 
 const Workflow = () => {
     return (
@@ -16,7 +17,7 @@ const Workflow = () => {
                     </div>
                     <div className={style.subheading}>
                         <p>
-                        Brings together companies, recruiters, candidates in the same workflow. Today the company to recruiter flow is inefficient with many manual processes.
+                            Brings together companies, recruiters, candidates in the same workflow. Today the company to recruiter flow is inefficient with many manual processes.
                         </p>
                     </div>
                     <div className={style.para}>
@@ -31,16 +32,18 @@ const Workflow = () => {
                             </span>
 
                             <span>
-                            <b>Integrated workflow :</b> Integrated workflow: With our integrated workflow, days lost in emails not seen, calls not picked will be a thing of past.
+                                <b>Integrated workflow :</b> Integrated workflow: With our integrated workflow, days lost in emails not seen, calls not picked will be a thing of past.
                             </span>
                         </p>
                     </div>
 
-                    <div className={style.demo}>Book a demo
-                        <i class="fa-solid fa-arrow-right"
-                            style={{ padding: "20px" }}
-                        ></i>
-                    </div>
+                    <Link to='/demo'>
+                        <div className={style.demo}>Book a demo
+                            <i class="fa-solid fa-arrow-right"
+                                style={{ padding: "20px" }}
+                            ></i>
+                        </div>
+                    </Link>
                 </div>
 
 

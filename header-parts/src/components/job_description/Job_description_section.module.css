@@ -1,8 +1,12 @@
 .main_container {
     display: flex;
     margin: auto;
+    /* justify-content: space-around; */
     max-width: 70%;
+    /* border-radius: 400px; */
     flex-wrap: wrap;
+    margin-top: 300px;
+    /* padding: 0 20%; */
     /* background-color: red; */
 }
 

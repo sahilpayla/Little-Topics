@@ -5,4 +5,5 @@
   box-sizing: border-box;
   transition: 0.3s;
   text-decoration: none;
+  color: inherit;
 }

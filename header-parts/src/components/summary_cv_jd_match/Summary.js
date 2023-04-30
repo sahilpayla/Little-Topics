@@ -2,7 +2,7 @@ import React from 'react'
 import phone1 from '../../Images/phone1.png'
 import phone2 from '../../Images/phone2.png'
 import style from './Summary.module.css';
-
+import { Link } from 'react-router-dom';
 
 const Summary = () => {
     return (
@@ -43,14 +43,17 @@ const Summary = () => {
                             </span>
 
                             <span>
-                                <b>Matching recommendations: </b> Score candidates' profiles based on job requirements to facilitate your  screening process.
+                                <b>Matching recommendations: </b> Score candidates' profiles based on job requirements to facilitate your screening process.
                             </span>
                         </p>
                     </div>
-                    <div className={style.demo}>Book a demo
-                        <i class="fa-solid fa-arrow-right"
-                            style={{ padding: "20px" }}
-                        ></i></div>
+                    <Link to='/demo'>
+                        <div className={style.demo}>Book a demo
+                            <i class="fa-solid fa-arrow-right"
+                                style={{ padding: "20px" }}
+                            ></i>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </>

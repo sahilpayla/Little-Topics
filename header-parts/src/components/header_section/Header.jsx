@@ -23,7 +23,7 @@ const Navbar = () => {
                 {/* links */}
                 <ul className={mobile ? style.mobile_nav_links : style.nav_links} onClick={() => setMobile(false)}>
                     <Link to='/' className={style.nav_items}>
-                        <li >Home</li>
+                        <li >Features</li>
                     </Link>
                     <Link to='/' className={style.nav_items}>
                         <li >About Us</li>
@@ -31,10 +31,10 @@ const Navbar = () => {
                     <Link to='/' className={style.nav_items}>
                         <li >Contact Us</li>
                     </Link>
-                    <Link to='/demo' className={style.nav_items}>
+                    <Link to='/demo' className={style.book_demo_button}>
                         <li >Book A Demo</li>
                     </Link>
-                    <Link to='/' className={style.nav_items}>
+                    <Link to='/' className={style.login_button}>
                         <li >Log In</li>
                     </Link>
                 </ul>

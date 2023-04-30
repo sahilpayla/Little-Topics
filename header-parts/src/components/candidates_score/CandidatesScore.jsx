@@ -2,6 +2,9 @@ import React from 'react'
 import style from './Candidates.module.css';
 import ipad from '../../Images/ipad.png'
 import screen from '../../Images/screen.png'
+import { Link } from 'react-router-dom';
+
+
 
 const CandidatesScore = () => {
     return (
@@ -37,11 +40,13 @@ const CandidatesScore = () => {
                         </p>
                     </div>
 
-                    <div className={style.demo}>Book a demo
-                        <i class="fa-solid fa-arrow-right"
-                            style={{ padding: "20px" }}
-                        ></i>
-                    </div>
+                    <Link to='/demo'>
+                        <div className={style.demo}>Book a demo
+                            <i class="fa-solid fa-arrow-right"
+                                style={{ padding: "20px" }}
+                            ></i>
+                        </div>
+                    </Link>
                 </div>
 
 

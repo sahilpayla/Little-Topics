@@ -5,6 +5,12 @@
     width: 100%;
 }
 
+input{
+    color: black;
+    /* color: #F4D313; */
+    /* color: #2186F2; */
+}
+
 .footer_bottom_section {
     font-size: 12px;
     color: #FFFFFF;

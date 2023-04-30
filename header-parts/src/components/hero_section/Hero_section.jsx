@@ -1,6 +1,4 @@
 import React from 'react'
-import laptop from '../../Images/MacBook Pro 16.png'
-import screen from '../../Images/laptop.png'
 import style from './Hero_section.module.css';
 import Curve from '../curve/Curve';
 
@@ -24,19 +22,7 @@ const Hero_section = () => {
                     <div className={style.watch_video}>Watch Video </div>
                 </div>
 
-
-                <div className={style.curve}></div>
                 {/* <Curve /> */}
-
-                {/* laptop image */}
-                {/* <div className={style.laptop}>
-                    <img className={style.laptop_model} src={laptop} alt="laptop" />
-                    <img className={style.laptop_screen} src={screen} alt="screen" />
-                </div> */}
-
-
-
-
             </div>
         </>
     )

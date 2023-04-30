@@ -1,6 +1,8 @@
 import React from 'react'
 import style from './Footer.module.css';
 import logo from '../../Images/Footer/footer-logo.png'
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
     return (
@@ -11,29 +13,37 @@ const Footer = () => {
                 <div className={style.footer_top_section}>
                     {/* footer-right */}
                     <div className={style.footer_left}>
-                        <div className={style.logo_section}>
-                            <img src={logo} alt="" />
-                            <p>
-                                Rare Billions
-                            </p>
-                        </div>
+                        <Link to='/'>
+                            <div className={style.logo_section}>
+                                <img src={logo} alt="" />
+                                <p>
+                                    Rare Billions
+                                </p>
+                            </div>
+                        </Link>
                         <div className={style.navigation}>
-                            <div className={style.navigation_items}>Features </div>
-                            <div className={style.navigation_items}>About Us</div>
-                            <div className={style.navigation_items}>Contact Us </div>
+                            <div className={style.navigation_items}>
+                                <Link to='/' >Features</Link>
+                            </div>
+                            <div className={style.navigation_items}>
+                                <Link to='/' >About Us</Link>
+                            </div>
+                            <div className={style.navigation_items}>
+                                <Link to='/' >Contact Us</Link>
+                            </div>
                         </div>
                     </div>
 
                     {/* footer-right */}
                     <div className={style.footer_right}>
-                        <div style={{fontWeight:"600", fontSize:"14px"}}>Subscribe</div>
+                        <div style={{ fontWeight: "600", fontSize: "14px" }}>Subscribe</div>
                         <div className={style.footer_email_section}>
                             <input className={style.footer_email} placeholder='Enter your email' type="text" />
                             <button className={style.footer_subscribe_button}>
-                            Subscribe
+                                Subscribe
                             </button>
                         </div>
-                        <div style={{fontSize:"14px"}}>
+                        <div style={{ fontSize: "14px" }}>
                             By subscribing you agree to with our Privacy Policy
                         </div>
                     </div>
