@@ -1,31 +1,52 @@
-import React from 'react'
-import style from './header.module.css'
+import { useState } from 'react';
+import style from './header.module.css';
+import { Link } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
+import { ImCross } from 'react-icons/im';
 import logo from '../../Images/header_logo.png';
 
-const Header = () => {
+const Navbar = () => {
+
+    const [mobile, setMobile] = useState(false)
+
     return (
-        <div className={style.main_header}>
-            <div className={style.header}>
-                <div className={style.header_logo_section}>
-                    <img src={logo} alt="" />
-                    <p>Rare Talent</p>
-                </div>
-                <div className={style.header_left}>
-                    <div className={style.header_list} >Features</div>
-                    <div className={style.header_list} >About Us</div>
-                    <div className={style.header_list} >Contact Us</div>
+        <>
+            <div className={style.navbar}>
 
-                    <div className={style.book_button}>
-                        Book a demo
+                <Link to='/'>
+                    <div className={style.logo}>
+                        <img src={logo} alt="logo" />
+                        <div className={style.company_name}>Rare Talents</div>
                     </div>
-                    <div className={style.login_button}>
-                        Log In
-                    </div>
+                </Link>
 
-                </div>
+                {/* links */}
+                <ul className={mobile ? style.mobile_nav_links : style.nav_links} onClick={() => setMobile(false)}>
+                    <Link to='/' className={style.nav_items}>
+                        <li >Home</li>
+                    </Link>
+                    <Link to='/' className={style.nav_items}>
+                        <li >About Us</li>
+                    </Link>
+                    <Link to='/' className={style.nav_items}>
+                        <li >Contact Us</li>
+                    </Link>
+                    <Link to='/demo' className={style.nav_items}>
+                        <li >Book A Demo</li>
+                    </Link>
+                    <Link to='/' className={style.nav_items}>
+                        <li >Log In</li>
+                    </Link>
+                </ul>
+
+
+                {/* buttons */}
+                <button className={style.mobile_menu_icon} onClick={() => setMobile(!mobile)}>
+                    {mobile ? <ImCross /> : <FaBars />}
+                </button>
             </div>
-        </div>
+        </>
     )
 }
 
-export default Header
+export default Navbar
