@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 const Job_description_section = () => {
     return (
         <>
-            <div className={style.main_container}>
+            <div id="f" className={style.main_container} >
 
 
                 {/* left container */}
-                <div className={style.left_container}>
+                <div className={style.left_container} >
                     <div className={style.phone_down}>
                         <img src={phone1} alt="" />
                     </div>
@@ -34,7 +34,7 @@ const Job_description_section = () => {
                     <div className={style.para}>
                         <p className={style.icon_container}>
                             <span>
-                                <i class="fa-sharp fa-regular fa-circle-check"
+                                <i className="fa-sharp fa-regular fa-circle-check"
                                     style={{
                                         color: "#00cc29",
                                         textAlign: "left",
@@ -49,7 +49,7 @@ const Job_description_section = () => {
                     </div>
                     <Link to='/demo'>
                         <div className={style.demo}>Book a demo
-                            <i class="fa-solid fa-arrow-right"
+                            <i className="fa-solid fa-arrow-right"
                                 style={{ padding: "20px" }}
                             ></i>
                         </div>

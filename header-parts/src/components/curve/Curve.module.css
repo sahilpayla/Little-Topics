@@ -9,18 +9,22 @@
 }
 
 .curve {
-  height: 50vh;
+  height: 77vh;
   position: relative;
   z-index: 2;
   background: linear-gradient(#2186F2 ,#4E36E2, #4731d6);
+  overflow: hidden;
 }
 
 .white_curve {
   height: 70vh;
-  border-radius: 20%;
+  border-radius:50%;
   z-index: 1;
-  width: 100%;
+  width: 150%;
+
+  /* margin: auto; */
   margin-top: 200px;
+  margin-left: -25%;
   position: absolute;
   background-color: rgb(255, 255, 255);
 }

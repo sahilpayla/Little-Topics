@@ -1,6 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import style from './Hero_section.module.css';
-import Curve from '../curve/Curve';
 
 
 const Hero_section = () => {
@@ -18,8 +18,24 @@ const Hero_section = () => {
 
                 {/* button section */}
                 <div className={style.hero_section_button_section}>
-                    <div className={style.get_started}>Get Started</div>
-                    <div className={style.watch_video}>Watch Video </div>
+                    <Link to='/demo'>
+                        <div className={style.get_started}>Get Started</div>
+                    </Link>
+                    <div className={style.watch_video}>Watch Video
+
+                        <i className="fa-solid fa-play"
+                            style={{
+                                textAlign: "center",
+                                color: "yellow",
+                                backgroundColor: "white",
+                                borderRadius: "50%",
+                                fontSize: "15px",
+                                padding: "4px 8px",
+                                marginLeft: "10px"
+                            }}
+                        ></i>
+
+                    </div>
                 </div>
 
                 {/* <Curve /> */}

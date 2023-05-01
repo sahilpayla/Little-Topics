@@ -16,16 +16,16 @@ const CustomerSlider = () => {
                 {/* slider */}
                 <div className={style.slider_container}>
                     <div className={style.slider_left_button}>
-                        <i class="fa-solid fa-arrow-left"></i>
+                        <i className="fa-solid fa-arrow-left"></i>
                     </div>
 
                     <div className={style.main_box}>
                         <div className={style.star_section}>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
 
 
                         </div>
@@ -46,11 +46,11 @@ const CustomerSlider = () => {
 
                     <div className={style.main_box_white}>
                         <div className={style.star_section}>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
 
 
                         </div>
@@ -71,11 +71,11 @@ const CustomerSlider = () => {
 
                     <div className={style.main_box}>
                         <div className={style.star_section}>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
-                            <i class="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
+                            <i className="fa-solid fa-star" style={{ color: '#FEA500' }}></i>
 
 
                         </div>
@@ -95,7 +95,7 @@ const CustomerSlider = () => {
                     </div>
 
                     <div className={style.slider_right_button}>
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                     </div>
 
                 </div>

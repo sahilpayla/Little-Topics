@@ -11,7 +11,8 @@ function Curve() {
                     <div className={style.container}>
                         <img src={laptop} alt="laptop" />
                         <div className={style.inner_container}>
-                            <img src={screen} alt="screen" />
+                            {/* <img src={screen} alt="screen" /> */}
+
                         </div>
                     </div>
                 </div>

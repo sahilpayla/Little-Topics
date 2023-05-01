@@ -34,7 +34,7 @@ const Summary = () => {
                     <div className={style.para}>
                         <p className={style.icon_container}>
                             <span>
-                                <i class="fa-sharp fa-regular fa-circle-check"
+                                <i className="fa-sharp fa-regular fa-circle-check"
                                     style={{
                                         color: "#00cc29",
                                         textAlign: "left",
@@ -49,7 +49,7 @@ const Summary = () => {
                     </div>
                     <Link to='/demo'>
                         <div className={style.demo}>Book a demo
-                            <i class="fa-solid fa-arrow-right"
+                            <i className="fa-solid fa-arrow-right"
                                 style={{ padding: "20px" }}
                             ></i>
                         </div>

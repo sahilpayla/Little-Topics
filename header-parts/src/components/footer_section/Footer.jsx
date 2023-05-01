@@ -2,12 +2,14 @@ import React from 'react'
 import style from './Footer.module.css';
 import logo from '../../Images/Footer/footer-logo.png'
 import { Link } from 'react-router-dom';
+import Footer_Curve from '../footer_curve/Curve';
 
 
 const Footer = () => {
     return (
         <>
-            <div className={style.footer}>
+        <Footer_Curve />
+            <div id="footer" className={style.footer}>
 
                 {/* top section  */}
                 <div className={style.footer_top_section}>

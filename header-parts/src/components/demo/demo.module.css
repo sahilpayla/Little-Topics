@@ -1,19 +1,6 @@
-.demo_container {
-    /* width: 70%; */
-    padding: 40px;
-    max-width: 70%;
-    /* background-color: red; */
-    /* background-color:white; */
-    border-radius: 8px;
-    display: flex;
-    /* flex-wrap: wrap; */
-    margin: auto;
-    margin-top: 150px;
-    color: black;
-}
-.demo_left{
+.demo_left {
     max-width: 60%;
-    padding-right: 160px;
+    padding-right: 50px;
 }
 
 .heading {
@@ -33,22 +20,25 @@
     flex-wrap: wrap;
     border: none;
 }
+
 .input_boxes input {
-    background-color: rgba(49, 104, 236, 0.15);;
+    background-color: rgba(49, 104, 236, 0.15);
+    ;
     margin-bottom: 5px;
     outline: none;
     padding: 15px 10px;
     border-radius: 4px;
     border: none;
 }
-.request_demo_button{
+
+.request_demo_button {
     background-color: #2186F2;
     padding: 15px 10px;
     text-align: center;
     color: white;
     width: 100%;
-      border: none;
-      margin-top: 50px;
+    border: none;
+    margin-top: 50px;
 
 }
 
@@ -58,4 +48,80 @@
 
 .demo_right img {
     width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* curve parts */
+.blue_curve {
+    height: 60vh;
+    position: relative;
+    z-index: 0;
+    background: linear-gradient(#2186F2, #4E36E2, #4731d6);
+}
+
+.white_curve {
+    height: 30vh;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 1;
+    width: 100%;
+    margin-top: 300px;
+
+    /* overflow-y: hidden; */
+    /* margin-left: -15%; */
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+.demo_container {
+    /* width: 70%; */
+    z-index: 2;
+    padding: 40px;
+    max-width: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 0px 20px 30px 0px rgba(102, 106, 245, 0.13);
+    top: 250px;
+    position: absolute;
+    /* background-color: red; */
+    color: black;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: -5%;
+}
+
+
+@media (max-width: 970px) {
+    .demo_container {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .demo_container {
+        /* background-color: red; */
+        flex-direction: column;
+    }
+
+    .demo_left {
+        max-width: 100%;
+        padding-right: 0px;
+    }
+
+    .demo_right {
+        width: 40%;
+        display: none;
+    }
+    
+    .demo_right img {
+        width: 100%;
+        display: none;
+    }
+
 }

@@ -22,15 +22,16 @@ const Navbar = () => {
 
                 {/* links */}
                 <ul className={mobile ? style.mobile_nav_links : style.nav_links} onClick={() => setMobile(false)}>
-                    <Link to='/' className={style.nav_items}>
-                        <li >Features</li>
-                    </Link>
-                    <Link to='/' className={style.nav_items}>
-                        <li >About Us</li>
-                    </Link>
-                    <Link to='/' className={style.nav_items}>
-                        <li >Contact Us</li>
-                    </Link>
+                    <li className={style.nav_items}>
+                        <a href="#f">Features</a>
+                    </li>
+                    <li className={style.nav_items}>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li className={style.nav_items}>
+                        <a href="#footer">Contact Us</a>
+                    </li>
+
                     <Link to='/demo' className={style.book_demo_button}>
                         <li >Book A Demo</li>
                     </Link>

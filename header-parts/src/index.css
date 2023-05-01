@@ -6,4 +6,5 @@
   transition: 0.3s;
   text-decoration: none;
   color: inherit;
+  scroll-behavior: smooth;
 }

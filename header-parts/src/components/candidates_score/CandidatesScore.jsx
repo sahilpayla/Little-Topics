@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import style from './Candidates.module.css';
-import ipad from '../../Images/ipad.png'
-import screen from '../../Images/screen.png'
+import ipad from '../../Images/ipad.png';
+import screen from '../../Images/screen_new.png';
 import { Link } from 'react-router-dom';
 
 
@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const CandidatesScore = () => {
     return (
         <>
-            <div className={style.main_container}>
+            <div id="about" className={style.main_container}>
 
                 {/* left container */}
 
@@ -25,7 +25,7 @@ const CandidatesScore = () => {
                     <div className={style.para}>
                         <p className={style.icon_container}>
                             <span>
-                                <i class="fa-sharp fa-regular fa-circle-check"
+                                <i className="fa-sharp fa-regular fa-circle-check"
                                     style={{
                                         color: "#00cc29",
                                         textAlign: "left",
@@ -42,7 +42,7 @@ const CandidatesScore = () => {
 
                     <Link to='/demo'>
                         <div className={style.demo}>Book a demo
-                            <i class="fa-solid fa-arrow-right"
+                            <i className="fa-solid fa-arrow-right"
                                 style={{ padding: "20px" }}
                             ></i>
                         </div>
@@ -56,9 +56,6 @@ const CandidatesScore = () => {
                 {/* right container */}
                 <div className={style.right_container}>
                     <div className={style.ipad}>
-                    </div>
-                    <img src={ipad} alt="" />
-                    <div className={style.screen}>
                         <img src={screen} alt="" />
                     </div>
                 </div>
