@@ -1,0 +1,50 @@
+/* Set default font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 40px;   
+    cursor: pointer;
+}
+.play_button{
+    text-align: center;
+}
+
+/* Style the video player container */
+.video_container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Style the video player */
+.video_container video {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the close button */
+.video_container button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+/* Change the background color of the close button on hover */
+.video_container button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
