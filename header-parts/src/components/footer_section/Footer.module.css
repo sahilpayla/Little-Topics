@@ -6,7 +6,8 @@
     width: 100%;
 }
 
-input {
+form input {
+    /* padding: 20px 0; */
     color: black;
     /* color: #F4D313; */
     /* color: #2186F2; */
@@ -66,7 +67,7 @@ input {
 
 .footer_email {
     font-size: 14px;
-    padding: 0px 25px;
+    padding: 14px 25px;
     border-radius: 28px;
     outline: none;
     border: 1px solid #F4D313;

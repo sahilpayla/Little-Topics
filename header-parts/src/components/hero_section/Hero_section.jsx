@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import style from './Hero_section.module.css';
 
 
-const Hero_section = () => {
+const Hero_section = (props) => {
     return (
         <>
             <div className={style.hero_section_main}>
@@ -18,10 +18,16 @@ const Hero_section = () => {
 
                 {/* button section */}
                 <div className={style.hero_section_button_section}>
+
                     <Link to='/demo'>
                         <div className={style.get_started}>Get Started</div>
                     </Link>
-                    <div className={style.watch_video}>Watch Video
+
+                    <div
+                        className={style.watch_video}
+                        onClick={() => props.setShowVideo(!props.showVideo)}>
+                        
+                        Watch Video
 
                         <i className="fa-solid fa-play"
                             style={{
@@ -36,6 +42,7 @@ const Hero_section = () => {
                         ></i>
 
                     </div>
+                    
                 </div>
 
                 {/* <Curve /> */}

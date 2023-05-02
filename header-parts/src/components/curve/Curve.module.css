@@ -12,13 +12,13 @@
   height: 77vh;
   position: relative;
   z-index: 2;
-  background: linear-gradient(#2186F2 ,#4E36E2, #4731d6);
+  background: linear-gradient(#2186F2, #4E36E2, #4731d6);
   overflow: hidden;
 }
 
 .white_curve {
   height: 70vh;
-  border-radius:50%;
+  border-radius: 50%;
   z-index: 1;
   width: 150%;
 
@@ -41,6 +41,10 @@
   /* background-color: rgb(36, 23, 23); */
 }
 
+.mobileContainer {
+  display: none;
+}
+
 
 .container img {
   width: 700px;
@@ -53,20 +57,16 @@
   display: block;
 }
 
-@media (max-width:768px) {
-  .container img {
-    width: 250px;
+@media (max-width:620px) {
+  .container {
+    display: none;
+  }
+
+  .mobileContainer {
     display: block;
+    margin-top: -150px;
+    /* margin: auto; */
+    text-align: center;
     /* background-color: red; */
   }
-
-  .inner_container img {
-    width: 200px;
-    display: block;
-  }
-
-  .inner_container {
-    bottom: 4px;
-  }
-
 }

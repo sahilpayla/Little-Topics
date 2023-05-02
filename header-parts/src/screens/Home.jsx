@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Hero_section from '../components/hero_section/Hero_section'
 import Job_description_section from '../components/job_description/Job_description_section'
 import CandidatesScore from '../components/candidates_score/CandidatesScore'
@@ -10,10 +10,13 @@ import Footer from '../components/footer_section/Footer'
 import Curve from '../components/curve/Curve'
 
 const Home = () => {
+
+    const [showVideo, setShowVideo] = useState(false);
+
     return (
         <>
-            <Hero_section />
-            <Curve />
+            <Hero_section showVideo={showVideo} setShowVideo={setShowVideo} />
+            <Curve showVideo={showVideo} setShowVideo={setShowVideo} />
             <Job_description_section />
             <CandidatesScore />
             <Summary />

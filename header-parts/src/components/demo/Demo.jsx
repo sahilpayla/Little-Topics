@@ -37,18 +37,21 @@ const Demo = () => {
                         <form onSubmit={handleSubmit}  className={style.input_boxes}>
                             <input
                                 type="text"
+                                required
                                 placeholder='Enter your Name'
                                 value={name}
                                 onChange={(event) => setName(event.target.value)}
                             />
                             <input
                                 type="email"
+                                required
                                 placeholder='Enter your Email Address'
                                 value={email}
                                 onChange={(event) => setEmail(event.target.value)}
                             />
                             <input
                                 type="tel"
+                                required
                                 placeholder='Enter your Phone Number'
                                 value={phoneNumber}
                                 onChange={(event) => setPhoneNumber(event.target.value)}
@@ -56,6 +59,7 @@ const Demo = () => {
                             />
                             <input
                                 type="text"
+                                required
                                 placeholder='Enter your Company Name'
                                 value={companyName}
                                 onChange={(event) => setCompanyName(event.target.value)}

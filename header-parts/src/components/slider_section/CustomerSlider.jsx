@@ -9,7 +9,7 @@ import avatar3 from '../../Images/Testimonial/Avatar Image3.png'
 const CustomerSlider = () => {
     return (
         <>
-            <div className={style.main_container}>
+            <div id="slider_section" className={style.main_container}>
                 <div className={style.heading}>Customer Testimonials</div>
                 <div className={style.subheading}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 

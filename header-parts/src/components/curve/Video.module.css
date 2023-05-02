@@ -1,0 +1,95 @@
+/* Set default font and background color */
+
+.line1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.play_button {
+    border: none;
+    /* background-color: transparent; */
+    /* cursor: pointer; */
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    /* margin-top: 50px; */
+    /* background-color: red; */
+}
+
+.playButton {
+    /* background-color: none; */
+    font-size: 100px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    width: max-content;
+    color: rgb(0, 68, 255);
+}
+
+
+/* Style the video player container */
+.video_container {
+    position: relative;
+    /* margin: 0 auto; */
+    max-width: 800px;
+    /* height: auto; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: red; */
+    text-align: center;
+}
+
+/* Style the video player */
+.video_container video {
+    width: 72%;
+    /* margin-bottom: 50px; */
+    border-radius: 8px;
+    height: 100vh;
+}
+
+/* Style the close button */
+.video_container button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    /* transition: background 0.2s ease; */
+}
+
+/* Change the background color of the close button on hover */
+.video_container button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+@media (max-width:620px) {
+    .video_container {
+        position: relative;
+        /* margin: 0 auto; */
+        max-width: 800px;
+        /* height: auto; */
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        border-radius: 5px;
+        overflow: hidden;
+        /* background-color: red; */
+        text-align: center;
+        display: none;
+    }
+
+    /* Style the video player */
+    .video_container video {
+        width: 72%;
+        /* margin-bottom: 50px; */
+        display: none;
+        border-radius: 8px;
+        height: 100vh;
+    }
+
+}

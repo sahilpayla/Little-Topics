@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from './Video.module.css';
-import video1 from '../../images_videos/InMyHead.mp4';
+import video1 from '../../images_videos/RareTalent_video.mp4';
 
 
 function VideoPlayer() {
@@ -8,17 +8,29 @@ function VideoPlayer() {
 
     return (
         <div>
-            <button
-                className={style.play_button}
-                onClick={() => setShowVideo(true)}
-            >
-                
-            </button>
+            <div className={style.play_button}>
+                <button
+                    className={style.playButton}
+                >
+                    <i
+                        onClick={() => setShowVideo(!showVideo)}
+                        class="fa-solid fa-circle-play"></i>
+                </button>
+            </div>
+
+            <div className={style.line1}>
+                Click on the Play Button
+            </div>
 
             {showVideo ? (
                 <div className={style.video_container}>
-                    <video src={video1} autoPlay loop />
-                    <button onClick={() => setShowVideo(false)}>x</button>
+                    <video
+                        src={video1} autoPlay loop muted />
+                    <button
+                        className={style.close_button}
+                        onClick={() => setShowVideo(false)}>
+
+                    </button>
                 </div>
             ) : null}
         </div>
