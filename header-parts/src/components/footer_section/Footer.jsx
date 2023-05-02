@@ -8,7 +8,7 @@ import Footer_Curve from '../footer_curve/Curve';
 const Footer = () => {
     return (
         <>
-        <Footer_Curve />
+            <Footer_Curve />
             <div id="footer" className={style.footer}>
 
                 {/* top section  */}
@@ -25,13 +25,17 @@ const Footer = () => {
                         </Link>
                         <div className={style.navigation}>
                             <div className={style.navigation_items}>
-                                <Link to='/' >Features</Link>
+                                {/* <Link to='/' > */}
+                                    <a href="#f">
+                                        Features
+                                    </a>
+                                {/* </Link> */}
                             </div>
                             <div className={style.navigation_items}>
-                                <Link to='/' >About Us</Link>
+                                <Link to='/demo' >About Us</Link>
                             </div>
                             <div className={style.navigation_items}>
-                                <Link to='/' >Contact Us</Link>
+                                <Link to='/demo' >Contact Us</Link>
                             </div>
                         </div>
                     </div>
@@ -41,9 +45,11 @@ const Footer = () => {
                         <div style={{ fontWeight: "600", fontSize: "14px" }}>Subscribe</div>
                         <div className={style.footer_email_section}>
                             <input className={style.footer_email} placeholder='Enter your email' type="text" />
-                            <button className={style.footer_subscribe_button}>
-                                Subscribe
-                            </button>
+                            <Link to='/' >
+                                <button className={style.footer_subscribe_button}>
+                                    Subscribe
+                                </button>
+                            </Link>
                         </div>
                         <div style={{ fontSize: "14px" }}>
                             By subscribing you agree to with our Privacy Policy
