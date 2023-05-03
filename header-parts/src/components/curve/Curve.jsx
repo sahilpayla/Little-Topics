@@ -4,7 +4,7 @@ import style from './Curve.module.css'
 import React, { useState } from "react";
 import videoStyle from './Video.module.css';
 import video1 from '../../Images/RareTalent_video.mp4';
-import phone from '../../Images/Phone_Base.png';
+import phone from '../../Images/phone_new.png';
 
 function Curve(props) {
 

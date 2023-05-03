@@ -105,21 +105,136 @@ button {
 
     .demo_container {
         flex-direction: column;
+        /* width: 70%; */
+        z-index: 2;
+        padding: 40px;
+        max-width: 70%;
+        border-radius: 8px;
+        box-shadow: 0px 20px 30px 0px rgba(102, 106, 245, 0.13);
+        /* top: 250px; */
+        position: absolute;
+        color: black;
+        align-items: center;
+        margin-left: 15%;
+        margin-top: -5%;
     }
 
     .demo_left {
         max-width: 100%;
         padding-right: 0px;
+        font-size: 12px;
     }
 
     .demo_right {
         width: 40%;
         display: none;
     }
-    
+
     .demo_right img {
         width: 100%;
         display: none;
     }
 
+}
+
+
+
+@media (max-width: 406px) {
+
+    .demo_container {
+        flex-direction: column;
+        /* width: 70%; */
+        z-index: 2;
+        /* padding: 40px; */
+        max-width: 70%;
+        border-radius: 8px;
+        box-shadow: 0px 20px 30px 0px rgba(102, 106, 245, 0.13);
+        /* top: 250px; */
+        position: absolute;
+        color: black;
+        align-items: center;
+        /* margin-left: 0; */
+        /* margin-top: -5%; */
+        /* background-color: rgb(224, 131, 131); */
+        /* margin: auto; */
+    }
+
+    .demo_left {
+        /* max-width: 100%;/ */
+        /* padding-right: 0px; */
+        font-size: 5px;
+    }
+}
+
+
+
+/* *************** */
+/* mobile view heading and padding */
+@media (max-width: 378px) {
+    .heading{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .subheading{
+     padding: 0;
+        font-size: 10px;
+    }
+    .demo_container {
+        flex-direction: column;
+        width: 70%;
+        padding: 10px;
+    }
+
+    .input_boxes input{
+        /* background-color: red; */
+        padding: 5px;
+        font-size: 11px;
+    }
+    .request_demo_button {
+        background-color: #2186F2;
+        padding: 10px 10px;
+        text-align: center;
+        color: white;
+        width: 100%;
+        font-size: 10px;
+        border: none;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 290px) {
+    .input_boxes input{
+        /* background-color: red; */
+        padding: 5px;
+        font-size: 10px;
+    }
+    .request_demo_button {
+        background-color: #2186F2;
+        padding: 10px 10px;
+        text-align: center;
+        color: white;
+        width: 100%;
+        font-size: 10px;
+        border: none;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 228px) {
+    .input_boxes input{
+        /* background-color: red; */
+        padding: 5px;
+        font-size: 5px;
+    }
+    .request_demo_button {
+        background-color: #2186F2;
+        padding: 10px 10px;
+        text-align: center;
+        color: white;
+        width: 100%;
+        font-size: 10px;
+        border: none;
+        margin-top: 10px;
+    }
 }

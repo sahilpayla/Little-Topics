@@ -9,7 +9,7 @@ const Hero_section = (props) => {
             <div className={style.hero_section_main}>
                 <div className={style.hero_section_content}>
                     Cut down your hiring time <br />
-                    significantly !
+                    to less than half !
                 </div>
                 <p className={style.hero_section_content2}>
                     With the most advanced generative AI engine behind the scenes, writing JD's and filtering candidates is a breeze !
@@ -26,27 +26,37 @@ const Hero_section = (props) => {
                     <div
                         className={style.watch_video}
                         onClick={() => props.setShowVideo(!props.showVideo)}>
-                        
+
                         Watch Video
 
-                        <i className="fa-solid fa-play"
+                        {/* <i className="fa-solid fa-play"
+                            
                             style={{
                                 textAlign: "center",
                                 color: "yellow",
-                                backgroundColor: "white",
-                                borderRadius: "50%",
-                                fontSize: "15px",
-                                padding: "4px 8px",
-                                marginLeft: "10px"
+                                // backgroundColor: "white",
+                                // borderRadius: "50%",
                             }}
-                        ></i>
+                        ></i> */}
+
+
+                        <i className="fa fa-circle-play"
+                            style={{
+                                fontSize: "15px",
+                                faPrimaryColor: "#dbbe00",
+                                marginLeft: "10px",
+                                faSecondaryColor: "#ffffff"
+                            }}
+                        >
+                        </i>
+
 
                     </div>
-                    
+
                 </div>
 
                 {/* <Curve /> */}
-            </div>
+            </div >
         </>
     )
 }

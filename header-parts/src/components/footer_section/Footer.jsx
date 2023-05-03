@@ -11,7 +11,7 @@ const Footer = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`${subscribe} subscribed newsletter`)
+        alert(`Thank You ${subscribe.toUpperCase()} For Subscribing Rare Billions`)
     }
 
     return (
@@ -61,12 +61,12 @@ const Footer = () => {
                                     onChange={(e) => setSubscribe(e.target.value)}
                                 />
                                 {/* <Link to='/' > */}
-                                    <button
-                                        type='submit'
-                                        className={style.footer_subscribe_button}
-                                    >
-                                        Subscribe
-                                    </button>
+                                <button
+                                    type='submit'
+                                    className={style.footer_subscribe_button}
+                                >
+                                    Subscribe
+                                </button>
                                 {/* </Link> */}
                             </form>
                         </div>

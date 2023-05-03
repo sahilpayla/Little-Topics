@@ -64,9 +64,20 @@
 
   .mobileContainer {
     display: block;
-    margin-top: -150px;
-    /* margin: auto; */
+    margin-top: -250px;
+    margin: auto;
     text-align: center;
+    width: 220px;
+    overflow: visible;
+    /* z-index: 500; */
     /* background-color: red; */
+  }
+  
+  .mobileContainer img {
+    /* z-index: 50; */
+    width: 100%;
+    height: auto;
+    margin-top: -150px;
+
   }
 }
