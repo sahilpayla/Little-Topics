@@ -60,17 +60,21 @@
     display: flex;
 }
 
-.name {
+.names {
     font-size: 18px;
     color: #333333;
-    font-weight: bold;
+    font-weight: 500;
+    padding-left: 10px;
+    /* background-color: red; */
 }
 
 .profession {
     color: #4F4F4F;
     font-size: 14px;
     font-weight: 400;
+    padding-left: 10px;
 }
+
 
 .slider_left_button {
     position: absolute;
