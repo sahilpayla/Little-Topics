@@ -1,0 +1,20 @@
+.Page_not_found {
+    /* box-shadow: 0px 20px 30px 0px rgba(102, 106, 245, 0.13); */
+    /* background-color: rgb(255, 255, 255); */
+    width: 100%;
+    /* padding: 40px; */
+    font-size: 2rem;
+    /* max-width: 70%; */
+    margin: auto;
+    border-radius: 8px;
+    position: absolute;
+    color: black;
+    z-index: 2;
+    text-align: center;
+    /* display: flex; */
+    align-items: center;
+    top: 180px;
+    /* margin-left: 15%; */
+    /* margin-top: -5%; */
+    /* background-color: red; */
+}

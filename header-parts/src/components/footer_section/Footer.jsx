@@ -3,16 +3,62 @@ import style from './Footer.module.css';
 import logo from '../../Images/Footer/footer-logo.png'
 import { Link } from 'react-router-dom';
 import Footer_Curve from '../footer_curve/Curve';
+import axios from 'axios';
+// import { toast } from 'react-toast';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 
 const Footer = () => {
 
     const [subscribe, setSubscribe] = useState("");
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         alert(`Thank You ${subscribe.toUpperCase()} For Subscribing Rare Billions`)
+
+        try {
+            const res = await axios({
+                method: "post",
+                url: `${process.env.REACT_APP_SERVER_URL}/matchOTP`,
+                credentials: "include",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                data: {
+                    subscribe,
+                },
+            });
+            if (res.status === 200) {
+                toast.success(`Thank You ${subscribe.toUpperCase()} `, {
+                    position: "bottom-center",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
+                // setDisable(false);
+                // setPage("reset");
+            }
+        }
+        catch (error) {
+            toast.success(`Error Occured in the footer API`, {
+                position: "bottom-center",
+                autoClose: 3000,
+                theme: "dark",
+            });
+            console.log(error.message);
+        }
     }
+
+
+
+
 
     return (
         <>

@@ -7,6 +7,7 @@ import Features from './screens/Features';
 import Login from './screens/Login';
 import BookADemo from './screens/BookADemo';
 import Home from './screens/Home';
+import PageNotFound from './screens/PageNotFound';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route exact path='/' element={<Contact />} />
         <Route exact path='/' element={<Features />} />
         <Route exact path='/demo' element={<BookADemo />} />
+        <Route exact path='*' element={<PageNotFound />} />
       </Routes>
 
     </div>

@@ -4,27 +4,67 @@ import style from './demo.module.css';
 import Curve2 from '../curve2/Curve';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import axios from 'axios';
+// import { toast } from 'react-toast';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Demo = () => {
 
     const [name, setName] = useState("");
-    const [companyName, setCompanyName] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
+    const [company_name, setCompany_name] = useState("");
+    const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log("Name:", name);
-        console.log("Company Name:", companyName);
-        console.log("Phone Number:", phoneNumber);
-        console.log("Email:", email);
+        // alert(`Thank You ${name.toUpperCase()} For Subscribing Rare Billions`)
 
-    };
+        try {
+            const res = await axios({
+                method: "post",
+                url: `${process.env.REACT_APP_SERVER_URL}/demo`,
+                credentials: "include",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                data: {
+                    name,
+                    company:company_name,
+                    phone,
+                    email
+                },
+            });
+            if (res.status === 200) {
+                toast.success(`Thank You ${name}`, {
+                    position: "bottom-center",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
+                // setDisable(false);
+                // setPage("reset");
+            }
+        }
+        catch (error) {
+            toast.success(`Error Occured in the Demo API`, {
+                position: "bottom-center",
+                autoClose: 3000,
+                theme: "dark",
+            });
+            console.log(error.message);
+        }
+    }
 
     return (
         <>
 
             <Curve2 />
+            
             <div className={style.demo_container}>
                 <div className={style.demo_left}>
                     <div className={style.heading}>
@@ -53,16 +93,16 @@ const Demo = () => {
                                 type="tel"
                                 required
                                 placeholder='Enter your Phone Number'
-                                value={phoneNumber}
-                                onChange={(event) => setPhoneNumber(event.target.value)}
+                                value={phone}
+                                onChange={(event) => setPhone(event.target.value)}
 
                             />
                             <input
                                 type="text"
                                 required
                                 placeholder='Enter your Company Name'
-                                value={companyName}
-                                onChange={(event) => setCompanyName(event.target.value)}
+                                value={company_name}
+                                onChange={(event) => setCompany_name(event.target.value)}
                             />
 
                             {/* <Link to='/'> */}

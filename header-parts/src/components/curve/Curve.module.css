@@ -69,10 +69,22 @@
     text-align: center;
     width: 220px;
     overflow: visible;
-    /* z-index: 500; */
-    /* background-color: red; */
+    z-index: 9870;
+    background-color: red;
   }
-  
+
+  .mobileContainer img {
+    /* z-index: 50; */
+    width: 100%;
+    height: auto;
+    z-index: 987;
+    margin-top: -150px;
+
+  }
+}
+
+
+@media (max-width:410px) {
   .mobileContainer img {
     /* z-index: 50; */
     width: 100%;
@@ -81,5 +93,3 @@
 
   }
 }
-
-
