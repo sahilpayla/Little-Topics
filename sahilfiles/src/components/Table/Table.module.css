@@ -1,0 +1,75 @@
+.main_table{
+    margin:60px 40px;
+    background-color: white;
+}
+.header_box{
+    padding:40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading{
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.subheading{
+    font-size: 14px;
+    /* padding: 10px 0 30px 0; */
+    color: #7D8398;
+}
+button.add_new_user{
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #2186F2;
+    padding:2px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.header_front{
+    border-bottom: 0.01px solid #e7e7e7;
+}
+.manage_user{
+    display: flex;
+}
+.all{
+    color: #7D8398;
+    padding:5px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid transparent;
+    margin-right: 20px;
+}
+.all:hover{
+    color: #2186F2;
+    border-bottom: 1px solid #2186F2;
+    cursor: pointer;
+}
+table{
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+.table_head{
+    width: 100%;
+    margin: 10px;
+    padding: 20px 0;
+    background-color: rgba(233, 233, 233, 0.268);
+    /* background-color: #55565A; */
+}
+th, td{
+    border-bottom: 1px solid rgb(237, 237, 237);
+    /* border-right: 1px solid rgb(237, 237, 237); */
+    /* border-left: 1px solid rgb(237, 237, 237); */
+}
+
+th, td {
+    padding: 15px;
+  }
+
+  td{
+    width: max-content;
+}

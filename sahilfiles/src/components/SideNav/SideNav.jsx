@@ -1,13 +1,14 @@
 import React from 'react'
 import styles from './SideNav.module.css';
 import logo from '../../images/logo.svg'
+// import Link from 'react-router-dom'
 import { HiHome } from 'react-icons/hi'
 import { GiDiamonds } from 'react-icons/gi'
-import { AiFillStar,AiFillCopy } from 'react-icons/ai'
+import { AiFillStar, AiFillCopy } from 'react-icons/ai'
 import { IoIosSettings } from 'react-icons/io'
 import { IoDocumentLockOutline } from 'react-icons/io5'
 import { GiPapers } from 'react-icons/gi'
-import { BsAwardFill ,BsHddRackFill} from 'react-icons/bs'
+import { BsAwardFill, BsHddRackFill } from 'react-icons/bs'
 // import { BsHddRackFill } from 'react-icons/bs'
 
 
@@ -15,9 +16,11 @@ const SideNav = () => {
     return (
         <>
             <div className={styles.sidenav}>
-                <div className={styles.logo_container}>
-                    <img src={logo} alt="rare_billion_logo" />
-                </div>
+                {/* <Link to='/'> */}
+                    <div className={styles.logo_container}>
+                        <img src={logo} alt="rare_billion_logo" />
+                    </div>
+                {/* </Link> */}
                 <div className={styles.sidenav_bar}>
                     <div className={styles.nav_link}>
                         <div className={styles.nav_link_icon}>

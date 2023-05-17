@@ -1,0 +1,93 @@
+.Paginate{
+    display:flex;
+    width: 100%;
+    /* font-size: 14px; */
+    background-color: rgb(255, 255, 255);
+    color: #4F4F4F;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 0 15px;
+}
+.left_side{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    /* background-color: red; */
+    padding:10px 20px;
+}
+.items_per_page{
+    cursor: pointer;
+    background: #332E3C0A;
+    display: flex;
+    border-radius: 4px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.right_side{
+    /* background-color: pink; */
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+
+}
+
+button.PaginateButton{
+    background-color: #ffffff;
+    /* color:white; */
+    color: #4F4F4F;
+    
+    border: none;
+    margin: 0 10px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+button.PaginateButton:hover{
+    /* transform: scale(1.2); */
+    background-color: rgb(235, 235, 235);
+    color: black;
+    padding:5px 10px;
+    border-radius: 100px;
+}
+select{
+    cursor: pointer;
+}
+
+.PaginateNumber{
+    background-color: rgb(255, 255, 255);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:665px) {
+    .Paginate{
+        /* background-color: red; */
+        flex-direction:row-reverse;
+        /* flex-wrap: wrap; */
+        /* margin: auto; */
+    }
+    .left_side, 
+    .right_side{
+        margin: auto;
+        /* background-color: red; */
+    }
+}
+
+@media only screen and (max-width:637px) {
+    .left_side, 
+    .right_side{
+        /* margin: auto; */
+        font-size: 12px;
+        /* background-color: red; */
+    }
+}
+@media only screen and (max-width:496px) {
+    .Paginate{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+}

@@ -3,6 +3,7 @@ import styles from './Header.module.css';
 import { AiOutlineSearch, AiTwotoneCalendar, AiFillQuestionCircle } from 'react-icons/ai'
 import { BsFillBellFill } from 'react-icons/bs'
 import person from '../../images/person.png'
+import Table from '../Table/Table';
 
 //  ppp
 const Header = () => {
@@ -12,7 +13,6 @@ const Header = () => {
                 {/* <AiOutlineSearch /> */}
                 <input
                     type="search"
-
                     placeholder='Search for Sites, Tools or Users'
                 />
             </div>
