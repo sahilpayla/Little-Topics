@@ -1,0 +1,32 @@
+.header{
+    width: 85%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* float: right; */
+    padding: 0 50px;
+    background-color: rgb(255, 255, 255);
+}
+input{
+    padding:15px 10px;
+    width: 300px;
+    outline: none;
+    text-align: left;
+    border: 0.1px solid grey;
+    border-radius: 8px;
+    /* border: none; */
+}
+.header_left,
+.header_right{
+    /* background-color: pink; */
+    /* padding:20px 10px; */
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+.header_icons{
+    margin-right: 20px;
+    font-size: 25px;
+    color: #2186F2;
+}
