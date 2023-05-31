@@ -16,7 +16,11 @@ const Board = () => {
 
             <div className={style.board_cards}>
                 <Card />
-                {/* <h1>Cards</h1> */}
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
             </div>
         </div>
     )

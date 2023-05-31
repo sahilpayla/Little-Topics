@@ -5,10 +5,10 @@ import { AiOutlineCloseCircle } from 'react-icons/ai'
 const Chip = (props) => {
     return (
         <>
-            <div className={style.chip} style={{ backgroundColor: props.color }}>
+            <div className={style.chip} style={{ backgroundColor: props.color}}>
                 <p>
                     {props.text}
-                    {props.close && <AiOutlineCloseCircle onClick={props.onClose ? props.onClose() : ""} />}
+                    {props.close && <AiOutlineCloseCircle onClick={props.onClose ? props.close() : ""} />}
                 </p>
             </div>
         </>
