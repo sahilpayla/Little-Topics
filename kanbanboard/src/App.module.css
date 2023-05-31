@@ -1,0 +1,4 @@
+.board_container{
+    display: flex;
+    overflow-x: auto;
+}

@@ -1,0 +1,9 @@
+.board{
+    min-width: 300px;
+    padding: 20px;
+    background-color: rgb(222, 158, 169);
+    margin-right: 20px;
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
+}
