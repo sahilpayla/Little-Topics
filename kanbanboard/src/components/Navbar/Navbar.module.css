@@ -1,9 +1,16 @@
-.navbar{
-    /* background-color: black !important; */
+.navbar {
+    background-color: white !important;
     /* color: white; */
     font-weight: bold;
     font-size: 30px;
     text-align: center;
-    padding: 20px 0 ;
+    width: 100%;
+    padding: 20px 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     border-bottom: 1px solid rgb(241, 241, 241);
+    background: -webkit-linear-gradient(#21b1c4a5, #c42ceacb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

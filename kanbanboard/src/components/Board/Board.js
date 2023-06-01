@@ -2,6 +2,7 @@ import React from 'react'
 import style from './Board.module.css'
 import { BsThreeDots } from 'react-icons/bs';
 import Card from '../Card/Card';
+import Editable from '../Editable/Editable';
 
 const Board = () => {
     return (
@@ -21,6 +22,7 @@ const Board = () => {
                 <Card />
                 <Card />
                 <Card />
+                <Editable />
             </div>
         </div>
     )

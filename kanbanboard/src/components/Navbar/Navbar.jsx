@@ -6,9 +6,9 @@ import { BsFillSuitHeartFill } from 'react-icons/bs';
 const Navbar = () => {
     return (
         <div className={style.navbar}>
-            <h1>It's Kanban Board My Love {" "}
+            <h1> Kanban Board 
                 <span style={{color:"red"}}>
-                    <BsFillSuitHeartFill />
+                    {/* <BsFillSuitHeartFill /> */}
                 </span>
             </h1>
         </div>
