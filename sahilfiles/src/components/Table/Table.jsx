@@ -1,16 +1,69 @@
 import React from 'react'
 import styles from './Table.module.css';
 import { CgTrashEmpty } from 'react-icons/cg'
+import ReactSwitch from 'react-switch';
+import Switch from 'react-switch';
 
 const Table = () => {
 
     const data = [
-        { id: 1, name: 'John Doe', email: "Ester@gmail.com", role: 'admin', action: <CgTrashEmpty /> },
-        { id: 2, name: 'king Doe', email: "Ester@gmail.com", role: 'admin', action: <CgTrashEmpty /> },
-        { id: 3, name: 'paul Doe', email: "Ester@gmail.com", role: 'admin', action: <CgTrashEmpty /> },
-        { id: 4, name: 'kim Doe', email: "Ester@gmail.com", role: 'admin', action: <CgTrashEmpty /> },
-        { id: 5, name: 'loiuis  Doe', email: "Ester@gmail.com", role: 'admin', action: <CgTrashEmpty /> },
-        { id: 6, name: 'pious Doe', email: "Ester@gmail.com", role: 'admin', action: <CgTrashEmpty /> },
+        {
+            id: 1,
+            profile: "https://www.freepnglogos.com/uploads/windows-logo-png/windows-logo-logok-0.png",
+            name: 'John Doe',
+            email: "Ester@gmail.com",
+            role: 'admin',
+            action: <CgTrashEmpty />
+        },
+        {
+            id: 4221,
+            profile: "https://www.freepnglogos.com/uploads/windows-logo-png/windows-logo-logok-0.png",
+            name: 'John Doe',
+            email: "Ester@gmail.com",
+            role: 'admin',
+            action: <CgTrashEmpty />
+        },
+        {
+            id: 1332,
+            profile: "https://www.freepnglogos.com/uploads/windows-logo-png/windows-logo-logok-0.png",
+            name: 'John Doe',
+            email: "Ester@gmail.com",
+            role: 'admin',
+            action: <CgTrashEmpty />
+        },
+        {
+            id: 1245,
+            profile: "https://www.freepnglogos.com/uploads/windows-logo-png/windows-logo-logok-0.png",
+            name: 'John Doe',
+            email: "Ester@gmail.com",
+            role: 'admin',
+            action: <CgTrashEmpty />
+        },
+        {
+            id: 1344,
+            profile: "https://www.freepnglogos.com/uploads/windows-logo-png/windows-logo-logok-0.png",
+            name: 'John Doe',
+            email: "Ester@gmail.com",
+            role: 'admin',
+            action: <CgTrashEmpty />
+        },
+        {
+            id: 1033,
+            profile: "https://www.freepnglogos.com/uploads/windows-logo-png/windows-logo-logok-0.png",
+            name: 'John Doe',
+            email: "Ester@gmail.com",
+            role: 'admin',
+            action: <CgTrashEmpty />
+        },
+        {
+            id: 1090,
+            profile: "https://www.freepnglogos.com/uploads/windows-logo-png/windows-logo-logok-0.png",
+            name: 'John Doe',
+            email: "Ester@gmail.com",
+            role: 'admin',
+            action: <CgTrashEmpty />
+        },
+
 
     ];
 
@@ -42,21 +95,49 @@ const Table = () => {
                     <table>
                         <thead className={styles.table_head}>
                             <tr>
-                                <th style={{fontWeight:"500"}}>id</th>
-                                <th style={{fontWeight:"500"}}>Name</th>
-                                <th style={{fontWeight:"500"}}>Email</th>
-                                <th style={{fontWeight:"500"}}>Role</th>
-                                <th style={{fontWeight:"500"}}>Actions</th>
+                                <th className={styles.id_head}>id</th>
+                                <th style={{ fontWeight: "500" }}>Name</th>
+                                <th style={{ fontWeight: "500" }}>Email</th>
+                                <th style={{ fontWeight: "500" }}>Role</th>
+                                <th style={{ fontWeight: "500" }}>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             {data.map((row) => (
                                 <tr key={row.id}>
-                                    <td>{row.id}</td>
-                                    <td >{row.name}</td>
+                                    <td className={styles.id_pic}>
+                                        <div className={styles.id_pic_new}>
+                                            <img src={row.profile} />
+                                        </div>
+                                        <div className={styles.id_new}>
+                                            #{row.id}
+                                        </div>
+                                    </td>
+                                    <td>{row.name}</td>
                                     <td style={{ color: "grey" }}>{row.email}</td>
                                     <td style={{ color: "grey" }}>{row.role}</td>
-                                    <td style={{ color: "red", fontWeight: "bold" }}>{row.action}</td>
+                                    <td style={{ color: "red", fontWeight: "bold" }}>
+                                        <label htmlFor="material-switch">
+                                            {/* <span>Switch with style inspired by Material Design</span> */}
+                                            <Switch
+                                                // checked={job.isActive}
+                                                onChange={(checked, e, id) => {
+                                                    // handleToogle(job._id);
+                                                }}
+                                                onColor="#E4CFFF"
+                                                onHandleColor="#2186F2"
+                                                handleDiameter={18}
+                                                uncheckedIcon={false}
+                                                checkedIcon={false}
+                                                // boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+                                                activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+                                                height={12.23}
+                                                width={30}
+                                                className="react-switch"
+                                                id="material-switch"
+                                            />
+                                        </label>
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
