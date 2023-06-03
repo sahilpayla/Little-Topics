@@ -1,0 +1,10 @@
+.navbar{
+    background-color: rgba(246, 246, 246, 0.425);
+    /* background-color: pink; */
+    color: rgb(32, 32, 32);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.266); */
+}
