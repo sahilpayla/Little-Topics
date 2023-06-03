@@ -8,3 +8,20 @@
     position: sticky;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.266); */
 }
+
+.searchBar{
+    outline: none;
+    border: none;
+    text-align: left;
+    font-weight: 100;
+    color: rgb(80, 80, 80);
+    border-bottom: 1px solid #cdcdcd;
+    padding: 20px 100px 10px 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    /* background-color: pink; */
+}
+::placeholder{
+    color: rgb(217, 217, 217);
+    /* color: pink; */
+}
