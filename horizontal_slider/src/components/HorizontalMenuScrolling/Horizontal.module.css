@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    overflow-x: auto;
+    width: 80%;
+    margin: auto;
+    /* max-height: 120px; */
+    /* border: 1px solid grey; */
+  
+}
+ .item {
+    margin-right: 20px;
+    height: 200px;
+    min-width: 550px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: pink;
+
+    display: grid;
+    place-items: center;
+}
+
+.wrapper::-webkit-scrollbar{
+    display: none;
+}
